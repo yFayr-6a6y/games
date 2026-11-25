@@ -359,12 +359,16 @@ a {
   }
 
   .header__nav {
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .header__link {
+    font-size: 15px;
   }
 
   .welcome,
   .welcome__container {
-    min-height: 560px;
+    min-height: 540px;
   }
 
   .welcome__container {
@@ -376,15 +380,25 @@ a {
   }
 
   .welcome__title {
-    font-size: 43px;
+    font-size: clamp(36px, 11vw, 43px);
   }
 
   .welcome__text {
     font-size: 18px;
   }
 
+  .welcome__button {
+    min-height: 52px;
+    padding: 0 26px;
+  }
+
   .games {
-    padding: 72px 0 80px;
+    padding: 64px 0 72px;
+  }
+
+  .games__description {
+    margin-bottom: 32px;
+    font-size: 18px;
   }
 
   .game-card {
@@ -394,6 +408,16 @@ a {
 
   .game-card__content {
     min-height: 230px;
+    padding: 28px;
+  }
+
+  .game-card__number {
+    top: 24px;
+    left: 28px;
+  }
+
+  .game-card__title {
+    font-size: 26px;
   }
 
   .game-card__art {
