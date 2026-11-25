@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мини-игры</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <nav class="header__nav" aria-label="Главная навигация">
+        <a class="header__link" href="#welcome">Главная</a>
+        <a class="header__link" href="#games">Об играх</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome" id="welcome">
+      <div class="welcome__container">
+        <div class="welcome__content">
+          <p class="welcome__label">Новые развлечения каждый день</p>
+          <h1 class="welcome__title">Добро пожаловать на мой сайт мини-игр</h1>
+          <p class="welcome__text">
+            Выбирайте игру и проведите время весело и с пользой!
+          </p>
+          <a class="welcome__button" href="#games">Смотреть игры</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="games" id="games">
+      <div class="games__container">
+        <h2 class="games__title">Об играх</h2>
+        <p class="games__description">
+          Собрали самые интересные мини-игры для тренировки внимания, логики и реакции.
+        </p>
+
+        <div class="games__list">
+          <a class="game-card game-card--purple" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">01</span>
+              <h3 class="game-card__title">Угадай число</h3>
+              <p class="game-card__text">Попробуй угадать загаданное число за минимальное количество попыток.</p>
+            </div>
+            <div class="game-card__art game-card__art--guess" aria-hidden="true">
+              <span class="game-card__bubble">?</span>
+            </div>
+          </a>
+
+          <a class="game-card game-card--yellow" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">02</span>
+              <h3 class="game-card__title">Простая арифметика</h3>
+              <p class="game-card__text">Решайте примеры на сложение, вычитание и умножение.</p>
+            </div>
+            <div class="game-card__art game-card__art--math" aria-hidden="true">
+              <span>5 + 3 = ?</span>
+            </div>
+          </a>
+
+          <a class="game-card game-card--pink" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">03</span>
+              <h3 class="game-card__title">Переверни текст</h3>
+              <p class="game-card__text">Введи слово и посмотри, как оно выглядит задом наперёд.</p>
+            </div>
+            <div class="game-card__art game-card__art--text" aria-hidden="true">
+              <span>тексТ</span>
+            </div>
+          </a>
+
+          <a class="game-card game-card--green" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">04</span>
+              <h3 class="game-card__title">Камень, ножницы, бумага</h3>
+              <p class="game-card__text">Сыграй в классическую игру против компьютера.</p>
+            </div>
+            <div class="game-card__art game-card__art--rps" aria-hidden="true">
+              <span>✊</span>
+              <span>✌</span>
+              <span>✋</span>
+            </div>
+          </a>
+
+          <a class="game-card game-card--blue" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">05</span>
+              <h3 class="game-card__title">Простая викторина</h3>
+              <p class="game-card__text">Ответь на вопросы и проверь свои знания.</p>
+            </div>
+            <div class="game-card__art game-card__art--quiz" aria-hidden="true">
+              <span>A</span>
+              <span>B</span>
+            </div>
+          </a>
+
+          <a class="game-card game-card--orange" href="#">
+            <div class="game-card__content">
+              <span class="game-card__number">06</span>
+              <h3 class="game-card__title">Генератор цветов</h3>
+              <p class="game-card__text">Нажимай на кнопку и находи новые красивые сочетания.</p>
+            </div>
+            <div class="game-card__art game-card__art--colors" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
