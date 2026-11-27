@@ -183,13 +183,6 @@ a {
   background-image: url("./img/scroll.jpg");
   background-repeat: repeat-x;
   background-size: auto 50px;
-  animation: ticker-scroll 38s linear infinite;
-}
-
-@keyframes ticker-scroll {
-  to {
-    background-position-x: -3220px;
-  }
 }
 
 .games,
@@ -530,53 +523,7 @@ a {
   }
 
   .games {
-    padding: 56px 0 48px;
-  }
-
-  .games__title,
-  .mini-games__title {
-    font-size: 36px;
-  }
-
-  .games__description {
-    margin-bottom: 22px;
-    font-size: 14px;
-  }
-
-  .games__list {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .game-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .game-card__image {
-    height: 100%;
-    min-height: 140px;
-    aspect-ratio: auto;
-  }
-
-  .game-card__content {
-    min-height: 140px;
-    padding: 14px;
-  }
-
-  .game-card__title {
-    font-size: 16px;
-  }
-
-  .games__decoration--solid {
-    right: -24px;
-    width: 72px;
-  }
-
-  .games__decoration--outline {
-    right: -100px;
-    bottom: -80px;
-    width: 180px;
+    display: none;
   }
 
   .mini-games {
@@ -584,6 +531,7 @@ a {
   }
 
   .mini-games__title {
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
@@ -613,6 +561,11 @@ a {
   .mini-game__rules {
     font-size: 13px;
   }
+
+  .footer {
+    min-height: 64px;
+    padding: 16px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -620,7 +573,4 @@ a {
     scroll-behavior: auto;
   }
 
-  .ticker {
-    animation: none;
-  }
 }
